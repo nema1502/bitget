@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1.5;url=https://share.bitget.com/u/J7DQVHFB">
+    <title>Bitget Builder Bolivia - Redireccionando...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #191919 50%, #000000 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Animación de fondo con partículas */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(0, 240, 255, 0.15);
+            border-radius: 50%;
+            animation: float 12s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0) scale(1);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.8;
+            }
+            90% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(50px) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        .container {
+            text-align: center;
+            z-index: 10;
+            padding: 50px 40px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(15px);
+            border-radius: 24px;
+            border: 2px solid #00F0FF;
+            box-shadow: 0 0 40px rgba(0, 240, 255, 0.3), 0 8px 32px rgba(0, 0, 0, 0.5);
+            animation: slideIn 0.6s ease-out;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-40px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 28px;
+            background: linear-gradient(135deg, #00F0FF 0%, #05C3DD 100%);
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 46px;
+            font-weight: 900;
+            color: #000000;
+            animation: pulse 1.8s ease-in-out infinite;
+            box-shadow: 0 4px 30px rgba(0, 240, 255, 0.5);
+            position: relative;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #00F0FF, #009DB2);
+            z-index: -1;
+            opacity: 0.4;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.08);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                opacity: 0.4;
+            }
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        h1 {
+            color: #FFFFFF;
+            font-size: 34px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+            text-shadow: 0 2px 10px rgba(0, 240, 255, 0.3);
+        }
+
+        .subtitle {
+            color: #00F0FF;
+            font-size: 16px;
+            margin-bottom: 36px;
+            font-weight: 500;
+        }
+
+        .loader {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 28px;
+            position: relative;
+        }
+
+        .loader-circle {
+            width: 100%;
+            height: 100%;
+            border: 5px solid rgba(0, 240, 255, 0.2);
+            border-top-color: #00F0FF;
+            border-right-color: #05C3DD;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .redirect-text {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 15px;
+            margin-top: 24px;
+            font-weight: 500;
+        }
+
+        .dots {
+            display: inline-block;
+            color: #00F0FF;
+            font-weight: 700;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 14px 40px;
+            background: linear-gradient(135deg, #00F0FF 0%, #05C3DD 100%);
+            color: #000000;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 240, 255, 0.4);
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(0, 240, 255, 0.6);
+            background: linear-gradient(135deg, #05C3DD 0%, #00F0FF 100%);
+        }
+
+        .tagline {
+            margin-top: 20px;
+            color: #00F0FF;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 26px;
+            }
+            .container {
+                padding: 35px 25px;
+            }
+            .logo {
+                width: 75px;
+                height: 75px;
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Partículas animadas -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <div class="logo">B</div>
+        <h1>Bitget Builder Bolivia</h1>
+        <p class="subtitle">Construyendo el futuro cripto</p>
+        
+        <div class="loader">
+            <div class="loader-circle"></div>
+        </div>
+        
+        <p class="redirect-text">
+            Redireccionando<span class="dots">...</span>
+        </p>
+        
+        <a href="https://share.bitget.com/u/J7DQVHFB" class="button" id="redirectBtn">
+            Ir ahora
+        </a>
+
+        <p class="tagline">Trade Smarter</p>
+    </div>
+
+    <script>
+        // ========================================
+        // CONFIGURACIÓN - CAMBIA TU LINK AQUÍ
+        // ========================================
+        const REDIRECT_URL = 'https://share.bitget.com/u/J7DQVHFB';
+        const REDIRECT_DELAY = 1500; // milisegundos (1500 = 1.5 segundos)
+        
+        // ========================================
+        // NO MODIFICAR DEBAJO DE ESTA LÍNEA
+        // ========================================
+        
+        // Actualizar el meta refresh
+        document.querySelector('meta[http-equiv="refresh"]').setAttribute('content', `${REDIRECT_DELAY/1000};url=${REDIRECT_URL}`);
+        
+        // Actualizar el botón
+        document.getElementById('redirectBtn').href = REDIRECT_URL;
+        
+        // Redirección automática
+        setTimeout(() => {
+            window.location.href = REDIRECT_URL;
+        }, REDIRECT_DELAY);
+        
+        // Crear partículas animadas
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.width = Math.random() * 80 + 40 + 'px';
+            particle.style.height = particle.style.width;
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 12 + 's';
+            particle.style.animationDuration = (Math.random() * 8 + 8) + 's';
+            particlesContainer.appendChild(particle);
+        }
+        
+        // Animación de puntos
+        setInterval(() => {
+            const dotsElement = document.querySelector('.dots');
+            const current = dotsElement.textContent;
+            dotsElement.textContent = current.length >= 3 ? '' : current + '.';
+        }, 400);
+    </script>
+</body>
+</html>
